@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <script>
+        var name;
+        var age;
+        var enroll;
+        var a, b, c, d;
+        var total;
+        var avg;
+        intro();
+
+        function intro() {
+            alert("Student Marksheet Detail:");
+            name = prompt("Please Enter Your Name:");
+            age = parseInt(prompt("Enter your Age:"));
+            enroll = parseInt(prompt("Enter Your enroll no:"));
+            getinput();
+        }
+
+        function getinput() {
+            a = prompt("Enter Subject 1 Mark:");
+            b = prompt("Enter Subject 2 Mark:");
+            c = prompt("Enter Subject 3 Mark:");
+            d = prompt("Enter Subject 4 Mark:");
+            answer();
+        }
+
+        function answer() {
+            total = parseInt(a) + parseInt(b) + parseInt(c) + parseInt(d);
+            avg = total / 4;
+            alert("Student name:" + name + "\n" + "Student Enroll:" + enroll + "\n" + "student age :" + age + "\n" + "Total:" + total + "\n" + "Average :" + avg);
+            intro();
+        }
+    </script>
+</body>
+
+</html>
